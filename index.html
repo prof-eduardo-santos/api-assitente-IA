@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Assistente para Arduino</title>
+   
+</head>
+<body>
+    <h2>Assistente de Programação para Arduino</h2>
+    <p>Escreva seu algoritmo detalhado sobre o que o Arduino deve fazer:</p>
+    
+    <textarea id="prompt" placeholder="Ex: Ligar um LED conectado ao pino 3 ..."></textarea>
+    <button id="btnEnviar" onclick="gerarCodigo()">Gerar Código Arduino C++</button>
+
+    <h3>Código Arduino sugerido pela Inteligência Artificial Generativa:</h3>
+    <pre id="output">O código aparecerá aqui...</pre>
+
+    <button id="btnCopiar" onclick="copiarCodigo()">Copiar Código</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
